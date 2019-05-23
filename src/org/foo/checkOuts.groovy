@@ -11,5 +11,4 @@ class checkOuts {
       git credentialsId: "${nameCred}", url: "git@github.com:${user}/${repo}.git"
     }
   }
-  return this
 }
