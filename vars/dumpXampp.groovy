@@ -2,5 +2,5 @@
 // vars/dumpXampp
 def call(String user,String pass = null ,String host, String port, String dbname, String dumpDir) {
   sh "cd /c/xampp/mysql/bin && ./mysqldump --user=${user} --password=${pass}
-  --host=${host} --protocol=tcp --port=${port} --default-character-set=utf8 '${dbname}' > '${dumpDir}'"
+  --host=${host} --protocol=tcp --port=${port} --default-character-set=utf8 ${dbname} > ${dumpDir}"
 }
